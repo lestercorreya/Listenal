@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
+h5 {
+  margin: 0;
+}
+.wholeChat {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.top {
+  height: 80px;
+  width: 100%;
+  border-bottom: 2px solid rgb(184, 186, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  width: 30%;
+  height: calc(100vh - 80px);
+  border-right: 2px solid rgb(184, 186, 200);
+  background-color: white;
+}
+.leftOptions {
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+.leftContacts {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid rgb(184, 186, 200);
+  border-bottom: 2px solid rgb(184, 186, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.leftGroups {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid rgb(184, 186, 200);
+  border-bottom: 2px solid rgb(184, 186, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.leftList {
+  width: 100%;
+  height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+.bottom {
+  display: flex;
+}
+.right {
+  width: 70%;
+  height: calc(100vh - 80px);
+}
+.chat-alternate-react {
+  background-color: green;
+  width: 70%;
+  height: calc(100vh - 80px);
+}
+.rightTitle {
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid rgb(184, 186, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.chatSection {
+  height: calc(100vh - 240px);
+  width: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+.rightType {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.eachItem {
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+}
+.active {
+  background-color: #8f8ce8;
+  color: white;
+}
+.person-img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  border-radius: 50%;
+  flex: none;
+  overflow: hidden;
+}
+.typeInput {
+  width: calc(100% - 100px);
+  border: none;
+  background: transparent;
+  resize: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.sendDiv,
+.playDiv {
+  cursor: pointer;
+}
+.eachItem {
+  border-bottom: 2px solid rgb(184, 186, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatBox {
+  width: fit-content;
+  max-width: 400px;
+  margin: 20px;
+  display: flex;
+}
+.below-name {
+  color: #a1a1a1;
+  font-size: 0.7rem;
+  margin: 0 10px;
+}
+.chatBox-top {
+  display: flex;
+}
+.inner-chatBox {
+  background-color: #8f8ce8;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.right-message {
+  margin-left: auto;
+  text-align: right;
+}
+.optionName {
+  font-weight: lighter;
+}
+.chat-burger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+.chat-select-option {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-select-option-button {
+  width: 200px;
+  height: 50px;
+  background-color: #8f8ce8;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(184, 186, 200);
+  cursor: pointer;
+}
+.chat-Modal-outer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.peopleInsideAddGroup {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.trackItem-ul {
+  max-height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+.trackItem {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+.trackItem-img {
+  width: 70px;
+  height: 70px;
+  background-color: grey;
+}
+.trackItem-text span {
+  color: #a1a1a1;
+  font-size: 0.8rem;
+}
+.spotify-player {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  z-index: 1;
+}
+.spotify-player-footer {
+  border-bottom: 1px solid rgb(184, 186, 200);
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+}
+.spotify-player-footer button {
+  background-color: white;
+  border: 1px solid rgb(220, 53, 69);
+  outline: none;
+  color: rgb(220, 53, 69);
+  padding: 2px 5px;
+}
+.spotify-player-footer button:hover {
+  background-color: rgb(220, 53, 69);
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .left {
+    transform: translateX(-100%);
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+  }
+  .right {
+    width: 100%;
+  }
+  .chat-burger {
+    display: block;
+  }
+}
